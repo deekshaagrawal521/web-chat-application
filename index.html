@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Chat Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header Section -->
+    <header class="app-header">
+      <div class="header-content">
+        <h1>Web Chat Application</h1>
+      </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="header">
+        <span>Contacts</span>
+      </div>
+      <div class="contacts">
+        <!-- Dynamic contacts will appear here -->
+      </div>
+      <div class="add-contact">
+        <input type="text" id="contact-name" placeholder="Enter contact name" />
+        <button id="add-contact-btn">Add Contact</button>
+      </div>
+    </div>
+
+    <!-- Chat Window -->
+    <div class="chat-window">
+      <div class="chat-header">
+        <p>Select a contact to start chatting</p>
+      </div>
+      <div class="chat-messages">
+        <!-- Messages will go here -->
+         
+      </div>
+      <div class="chat-input">
+
+        <input type="file" id="file-input" style="display: none;" />
+        <button id="file-upload-btn">📎</button>
+        <input type="text" id="message-input" placeholder="Type a message" />
+        <button id="send-btn">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
